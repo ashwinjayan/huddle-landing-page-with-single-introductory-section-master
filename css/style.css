@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+  width: 98.5%;
+  background-image: url("../images/bg-mobile.svg");
+  background-color: #674baf;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url("../images/bg-desktop.svg");
+    background-size: cover;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 2em;
+  width: 85%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .header {
+  width: 100%;
+}
+
+.container .logo {
+  background-image: url("../images/logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 9em;
+  height: 6em;
+  float: left;
+}
+
+.container .hero-img {
+  margin: 0 auto;
+}
+
+.container .hero-img img {
+  width: 100%;
+}
+
+.container .hero-content {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.container .hero-content button {
+  margin-top: 2em;
+  border: none;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  color: #674baf;
+  border-radius: 20em;
+  width: 50%;
+  height: 3em;
+  -webkit-box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.15);
+}
+
+.container .socials {
+  margin: 0 auto;
+  margin-top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+}
+
+.container .socials .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 40px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20em;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    position: relative;
+    width: 90%;
+    -ms-grid-rows: 10% 1fr 1fr 1fr;
+        grid-template-rows: 10% 1fr 1fr 1fr;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "logo logo" "image content" "image content" "image content";
+  }
+  .container .logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: logo;
+    width: 10em;
+  }
+  .container .hero-img {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: image;
+  }
+  .container .hero-content {
+    padding: 0 3em;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
+    grid-area: content;
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .container .hero-content button {
+    width: 30%;
+  }
+  .container .socials {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  margin-top: 5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    right: 7em;
+  }
+}
+
+.attribution a {
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
