@@ -6,7 +6,7 @@ h1 {
 
 body {
   font-family: "Open Sans", sans-serif;
-  height: 100vh;
+  height: 80vh;
   width: 98.5%;
   font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
   background-image: url("../images/bg-mobile.svg");
@@ -25,7 +25,7 @@ body {
 
 .container {
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 5em;
   width: 85%;
   display: -ms-grid;
   display: grid;
@@ -112,7 +112,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .container {
-    height: 90vh;
+    height: 80vh;
     position: relative;
     width: 90%;
     -ms-grid-rows: 10% 90%;
@@ -168,7 +168,7 @@ body {
 @media only screen and (min-width: 768px) {
   .attribution {
     position: absolute;
-    bottom: -5em;
+    bottom: 0;
     right: 7em;
   }
 }
