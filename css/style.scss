@@ -101,7 +101,7 @@ body {
     }
 
     @media only screen and (min-width: 768px) {
-        height               : 85vh;
+        height               : 90vh;
         position             : relative;
         width                : 90%;
         grid-template-rows   : 10% 90%;
@@ -135,7 +135,7 @@ body {
         .socials {
             position: absolute;
             right   : 0;
-            bottom  : 0;
+            bottom  : 2em;
         }
     }
 }
