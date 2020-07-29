@@ -18,6 +18,8 @@ body {
     height     : 100%;
     width      : 98.5%;
 
+    font-size       : calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+
     background-image   : url('../images/bg-mobile.svg');
     background-color   : $violet;
     background-position: top;
