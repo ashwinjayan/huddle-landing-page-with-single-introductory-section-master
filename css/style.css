@@ -111,6 +111,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .container {
+    height: 85vh;
     position: relative;
     width: 90%;
     -ms-grid-rows: 10% 90%;
