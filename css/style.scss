@@ -103,12 +103,13 @@ body {
     @media only screen and (min-width: 768px) {
         position: relative;
         width     : 90%;
-        grid-template-rows : 10% 1fr 1fr 1fr;
+        grid-template-rows : 10% 90%;
         grid-template-columns: 50% 50%;
         grid-template-areas: "logo logo"
             "image content"
             "image content"
             "image content";
+        align-items: center;
 
         .logo {
             grid-area: logo;
